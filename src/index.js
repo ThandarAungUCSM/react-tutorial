@@ -4,10 +4,12 @@ import ReactDOM from 'react-dom';
 function MyApp() {
     return (
         <div>
+            <h1>TDA - UCSM</h1>
+            <p> This is a paragraph about me...</p>
             <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
+                <li>Thailand</li>
+                <li>Japan</li>
+                <li>Singapore</li>
             </ul>
         </div>
     )
