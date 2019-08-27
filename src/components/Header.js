@@ -2,8 +2,8 @@ import React from "react"
 
 function Header() {
     return (
-        <header>
-            <p>This is the Header element.</p>
+        <header class="navbar">
+            This is the Header element.
         </header>
     )
 }
