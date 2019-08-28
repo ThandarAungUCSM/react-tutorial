@@ -3,15 +3,18 @@ import React from 'react';
 // https://scrimba.com/p/p4Mrt9/cQnMDHD
 
 class App extends React.Component {
-  yourMethodHere() {
-
+  constructor() {
+    super()
+    this.state = {
+      answer: "Yes"
+    }
   }
-  render() {
-    const style = this.yourMethodHere()
 
+  render() {
     return (
       <div>
-        <h1>{this.props.whatever}</h1>
+        <h1>Is state important to know? {this.state.answer}</h1>
+        <ChildComponent answer={this.state.answer} />
       </div>
     );
   }
