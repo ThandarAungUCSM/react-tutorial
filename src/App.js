@@ -1,38 +1,18 @@
 import React from 'react';
 
-import ContactCard from './components/ContactCard'
+import Joke from './components/Joke'
 
 function App() {
   return (
     <div className="contacks">
-      <ContactCard 
-        contact = {{ name: "Mr. Whiskerson",
-                     imgUrl: "http://placekitten.com/360/200",
-                     phone: "(212) 555-1234",
-                     email: "mr.whiskaz@catnap.meow" }}
-      />
-
-      <ContactCard 
-        contact = {{ name: "Mr. Whiskerson",
-                     imgUrl: "http://placekitten.com/360/200",
-                     phone: "(212) 555-1234",
-                     email: "mr.whiskaz@catnap.meow" }}
-      />
-
-      <ContactCard 
-        contact = {{ name: "Mr. Whiskerson",
-                     imgUrl: "http://placekitten.com/360/200",
-                     phone: "(212) 555-1234",
-                     email: "mr.whiskaz@catnap.meow" }}
-      />
-
-      <ContactCard 
-        contact = {{ name: "Mr. Whiskerson",
-                     imgUrl: "http://placekitten.com/360/200",
-                     phone: "(212) 555-1234",
-                     email: "mr.whiskaz@catnap.meow" }}
-      />
-
+      <Joke
+        punchLine="My new job" />
+      <Joke 
+        question = "What's the name" 
+        punchLine="The name is Yu." />
+      <Joke 
+        question = "What's the city" 
+        punchLine="The city is Yangon." />
     </div>
   );
 }
